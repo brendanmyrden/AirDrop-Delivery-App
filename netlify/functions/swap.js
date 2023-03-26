@@ -17,11 +17,11 @@
     const DEADLINE = Math.floor(Date.now() / 1000) + 60 * 10 // 10 minutes
 
     const transaction = await V2_ROUTER.connect(ACCOUNT_1).swapExactETHForTokens(
-    0,
-    PATH,
-    ACCOUNT_1.address,
-    DEADLINE,
-    { value: process.env.SWAP_AMOUNT }
+        0,
+        PATH,
+        ACCOUNT_1.address,
+        DEADLINE,
+        { value: process.env.SWAP_AMOUNT }
     )
 
     console.log(`Swap Complete!`);
